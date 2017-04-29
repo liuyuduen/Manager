@@ -10,6 +10,7 @@ namespace Base.Kernel
     /// </summary>
     public interface IManageProvider
     { 
+
         /// <summary>
         /// 写入登录信息
         /// </summary>
