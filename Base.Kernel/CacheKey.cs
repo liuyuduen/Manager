@@ -10,5 +10,6 @@ namespace Base.Kernel
     {
         public readonly static string UserList = "UserList";
         public readonly static string UserPermissions = "UserPermissions";
+        public readonly static string UserRoles = "UserRoles"; 
     }
 }
