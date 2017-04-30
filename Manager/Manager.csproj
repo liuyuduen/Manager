@@ -194,6 +194,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ModuleController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\SystemController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Ext\AOPFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -204,6 +208,29 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jqgrid\css\jqgrid.css" />
+    <Content Include="Content\jqgrid\grid.locale-cn.js" />
+    <Content Include="Content\jqgrid\images\pagination_icons.png" />
+    <Content Include="Content\jqgrid\images\sort_asc.png" />
+    <Content Include="Content\jqgrid\images\sort_desc.png" />
+    <Content Include="Content\jqgrid\images\ui-anim_basic_16x16.gif" />
+    <Content Include="Content\jqgrid\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\jqgrid\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Content\jqgrid\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Content\jqgrid\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Content\jqgrid\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\jqgrid\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Content\jqgrid\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Content\jqgrid\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Content\jqgrid\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Content\jqgrid\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\jqgrid\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Content\jqgrid\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Content\jqgrid\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\jqgrid\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Content\jqgrid\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Content\jqgrid\jqGrid.js" />
+    <Content Include="Content\jqgrid\jquery-ui-custom.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -229,7 +256,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -241,6 +267,14 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Module\Index.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Role\Index.cshtml" />
+    <Content Include="Views\System\Index.cshtml" />
+    <Content Include="Views\User\Registr.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Base.Cache\Base.Cache.csproj">

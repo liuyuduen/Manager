@@ -1,6 +1,7 @@
 F:\project\Manager\Code\Manager\Base.Cache\bin\Debug\Base.Cache.dll
 F:\project\Manager\Code\Manager\Base.Cache\bin\Debug\Base.Cache.pdb
 F:\project\Manager\Code\Manager\Base.Cache\bin\Debug\Base.Utility.dll
+F:\project\Manager\Code\Manager\Base.Cache\bin\Debug\StackExchange.Redis.dll
 F:\project\Manager\Code\Manager\Base.Cache\bin\Debug\log4net.dll
 F:\project\Manager\Code\Manager\Base.Cache\bin\Debug\ICSharpCode.SharpZipLib.dll
 F:\project\Manager\Code\Manager\Base.Cache\bin\Debug\Castle.MicroKernel.dll
@@ -13,4 +14,3 @@ F:\project\Manager\Code\Manager\Base.Cache\bin\Debug\Base.Utility.pdb
 F:\project\Manager\Code\Manager\Base.Cache\obj\Debug\Base.Cache.csprojResolveAssemblyReference.cache
 F:\project\Manager\Code\Manager\Base.Cache\obj\Debug\Base.Cache.dll
 F:\project\Manager\Code\Manager\Base.Cache\obj\Debug\Base.Cache.pdb
-F:\project\Manager\Code\Manager\Base.Cache\bin\Debug\StackExchange.Redis.dll

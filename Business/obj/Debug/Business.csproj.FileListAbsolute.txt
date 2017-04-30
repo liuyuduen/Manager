@@ -5,8 +5,10 @@ F:\project\Manager\Code\Manager\Business\bin\Debug\Base.DataAccess.dll
 F:\project\Manager\Code\Manager\Business\bin\Debug\Base.Entity.dll
 F:\project\Manager\Code\Manager\Business\bin\Debug\Base.Kernel.dll
 F:\project\Manager\Code\Manager\Business\bin\Debug\Base.Utility.dll
-F:\project\Manager\Code\Manager\Business\bin\Debug\IBusiness.dll
 F:\project\Manager\Code\Manager\Business\bin\Debug\EntityFramework.dll
+F:\project\Manager\Code\Manager\Business\bin\Debug\EntityFramework.SqlServer.dll
+F:\project\Manager\Code\Manager\Business\bin\Debug\IBusiness.dll
+F:\project\Manager\Code\Manager\Business\bin\Debug\StackExchange.Redis.dll
 F:\project\Manager\Code\Manager\Business\bin\Debug\System.Web.Mvc.dll
 F:\project\Manager\Code\Manager\Business\bin\Debug\log4net.dll
 F:\project\Manager\Code\Manager\Business\bin\Debug\ICSharpCode.SharpZipLib.dll
@@ -26,13 +28,11 @@ F:\project\Manager\Code\Manager\Business\bin\Debug\Base.Utility.pdb
 F:\project\Manager\Code\Manager\Business\bin\Debug\Base.DataAccess.pdb
 F:\project\Manager\Code\Manager\Business\bin\Debug\IBusiness.pdb
 F:\project\Manager\Code\Manager\Business\bin\Debug\EntityFramework.xml
+F:\project\Manager\Code\Manager\Business\bin\Debug\EntityFramework.SqlServer.xml
 F:\project\Manager\Code\Manager\Business\bin\Debug\System.Web.Mvc.xml
 F:\project\Manager\Code\Manager\Business\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\project\Manager\Code\Manager\Business\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 F:\project\Manager\Code\Manager\Business\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
 F:\project\Manager\Code\Manager\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
 F:\project\Manager\Code\Manager\Business\obj\Debug\Business.dll
 F:\project\Manager\Code\Manager\Business\obj\Debug\Business.pdb
-F:\project\Manager\Code\Manager\Business\bin\Debug\EntityFramework.SqlServer.dll
-F:\project\Manager\Code\Manager\Business\bin\Debug\EntityFramework.SqlServer.xml
-F:\project\Manager\Code\Manager\Business\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
-F:\project\Manager\Code\Manager\Business\bin\Debug\StackExchange.Redis.dll

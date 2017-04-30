@@ -39,12 +39,12 @@ namespace Base.Kernel
         /// <param name="filterContext"></param>
         public void OnException(ExceptionContext filterContext)
         {
-            string controller = filterContext.RouteData.Values["controller"] as string;
-            string action = filterContext.RouteData.Values["action"] as string;
+            //string controller = filterContext.RouteData.Values["controller"] as string;
+            //string action = filterContext.RouteData.Values["action"] as string;
 
-            Log.Error(string.Format("【{0}:{1}】Log发生异常!{2}", controller, action, filterContext.Exception.Message));
+            ////Log.Error(string.Format("【{0}:{1}】Log发生异常!{2}", controller, action, filterContext.Exception.Message));
 
-            filterContext.ExceptionHandled = true;
+            //filterContext.ExceptionHandled = true;
         }
 
         public void OnActionExecuted(ActionExecutedContext filterContext)

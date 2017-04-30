@@ -10,6 +10,7 @@ namespace Base.Kernel
     /// </summary>
     public interface IManageProvider
     { 
+
         /// <summary>
         /// 写入登录信息
         /// </summary>
@@ -22,7 +23,7 @@ namespace Base.Kernel
         IManageUser Current();
         /// <summary>
         /// 删除当前用户
-        /// </summary>
+        /// </summary> 
         void EmptyCurrent();
         /// <summary>
         /// 是否过期

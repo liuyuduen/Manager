@@ -11,7 +11,7 @@ namespace Manager.Controllers
     {
         public ActionResult Index()
         {
-            string reuslt = "OK";
+            //int a = Convert.ToInt32("a");
             return View();
         }
     }
