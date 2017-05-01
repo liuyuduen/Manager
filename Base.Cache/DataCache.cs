@@ -93,15 +93,15 @@ namespace Base.Cache
         /// </summary>
         /// <param name="key">缓存Key</param>
         /// <returns>object对象</returns>
-        public static object Get(string key)
+        public static object Get(string key, bool isCache = true)
         {
             if (string.IsNullOrEmpty(key))
                 return null;
-            if (ConfigHelper.IsCache == "false")
+            if (StringHelper.GetBool(ConfigHelper.IsCache) && isCache)
             {
-                return null;
+                return HttpContext.Current.Cache.Get(key);
             }
-            return HttpContext.Current.Cache.Get(key);
+            return null;
         }
         /// <summary>
         /// 移除指定数据缓存

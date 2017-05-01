@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace Base.Utility
     {
         public static string ToStrSql(string sql, ref JqGridParam jqgridparam)
         {
+             
             StringBuilder strSql = new StringBuilder();
             string orderField = jqgridparam.sidx;
             string orderType = jqgridparam.sord;

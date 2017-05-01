@@ -13,9 +13,9 @@ namespace IBusiness
         int AddUser(T_User user);
         int UpdateUser(T_User user);
         int DeleteUser(string userID);
-         
+
         T_User Login(string loginName);
         T_User GetUserByID(string userID);
-        List<T_User> GetUserList();
+        List<T_User> GetUserList(string loginName, ref JqGridParam jqgrid);
     }
 }

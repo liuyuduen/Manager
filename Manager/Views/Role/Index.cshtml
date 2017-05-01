@@ -9,7 +9,7 @@
 
     function GetGrid() {
         $("#gridTable").jqGrid({
-            url: "@Url.Content("/CustomerModule/CustomerBase/GridPageListJson")",
+            url: "@Url.Content("/User/GetUserList")",
             datatype: "json",
             height: $(window).height() - 250,
             autowidth: true,

@@ -13,7 +13,7 @@ namespace Base.Kernel
     /// </summary>
     public class ApplicationFilter : FilterAttribute, IAuthorizationFilter, IExceptionFilter, IActionFilter, IResultFilter
     {
-        // IManageProvider manager = CastleContainer.Instance.Resolve<IManageProvider>();
+        IManageProvider manager = CastleContainer.Instance.Resolve<IManageProvider>();
 
         /// <summary>
         /// 授权拦截器接口  判断时候有权限执行后面的Action，此接口在任何拦截器之前执行
@@ -21,11 +21,11 @@ namespace Base.Kernel
         /// <param name="filterContext"></param>
         public void OnAuthorization(AuthorizationContext filterContext)
         {
-            ////登录是否过期
-            //if (manager.IsOverdue())
-            //{
-            //    filterContext.Result = new RedirectResult("~/Login/Default");
-            //}
+            //登录是否过期
+            if (manager.IsOverdue())
+            {
+                filterContext.Result = new RedirectResult("~/Home/Login");
+            }
 
             string controller = filterContext.RouteData.Values["controller"] as string;
             string action = filterContext.RouteData.Values["action"] as string;

@@ -1,18 +1,27 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var isLogin = true;
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.js"></script>
-    <script src="~/Content/jqgrid/jqGrid.js"></script>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/jqgrid/css/jqgrid.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
+    <!-- jqGrid主题包-非必要 -->
+    <link href="~/Content/jqgrid/css/ui.jqgrid.css" rel="stylesheet" /> 
+    <link href="~/Content/jqgrid/css/css/redmond/jquery-ui-1.8.16.custom.css" rel="stylesheet" /> 
+   
+    <!-- jquery插件包-必要 --> 
+    <script src="~/Content/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/Scripts/bootstrap.js"></script>
+    <!-- jqGrid插件包-必要 -->
+    <script src="~/Content/jqgrid/js/jquery.jqGrid.src.js"></script>
+
+
     <script>
-        var isLogin = false;
         $(function () {
         });
     </script>
@@ -46,7 +55,7 @@
                         </ul>
                     </li>
                 </ul>
-                @if(false)
+                @if (isLogin)
                 {
                     <ul class="nav navbar-nav navbar-right hidden-sm">
                         <li class="dropdown">
@@ -65,9 +74,9 @@
                 }
                 else
                 {
-                    <ul class="nav navbar-nav navbar-right hidden-sm"> 
+                    <ul class="nav navbar-nav navbar-right hidden-sm">
                         <li><a href="/User/Registr">注册</a></li>
-                        <li><a href="/User/Login">登录</a></li>
+                        <li><a href="/Home/Login">登录</a></li>
                     </ul>
                 }
             </div>

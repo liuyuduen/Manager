@@ -142,7 +142,7 @@ namespace Base.Utility
             }
 
             ConStringDESEncrypt = AppSettings(DB_CONNECTION_STRING_DESENCRYPT);
-            IsCache = AppSettings(ISCACHE);
+            IsCache = AppSettings(ISCACHE) == "" ? "false" : AppSettings(ISCACHE);
             CacheTime = AppSettings(CACHE_TIME);
             CacheDBName = AppSettings(CACHE_DB_NAME);
             IocConfigPath = AppSettings(IOC_CONFIG_PAHT);

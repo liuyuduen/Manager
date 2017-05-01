@@ -9,6 +9,8 @@ using System.Web.Caching;
 using Base.Cache;
 using Base.DataAccess.Repository;
 using Base.Utility;
+using System.Data.Common;
+using Base.DataAccess;
 
 namespace Business
 {
@@ -18,6 +20,7 @@ namespace Business
         private string SystemID { get { return ConfigHelper.SystemID; } }
 
         DataContext db = new DataContext();
+        RepositoryFactory<T_User> data = new RepositoryFactory<T_User>();
 
         public int AddUser(T_User user)
         {
@@ -57,22 +60,20 @@ namespace Business
             return user as T_User;
         }
 
-        public List<T_User> GetUserList()
+        public List<T_User> GetUserList(string loginName, ref JqGridParam jqgrid)
         {
             List<T_User> users = null;
 
-            object obj = DataCache.Get(CacheKey.UserList);
-            if (obj == null)
+            StringBuilder strSql = new StringBuilder();
+            List<DbParameter> parameter = new List<DbParameter>();
+            strSql.Append("select * from T_User where 1=1");
+            if (!loginName.IsNullOrEmpty())
             {
-                users = db.T_User.ToList();
+                strSql.Append(" and loginName like '%@loginName%'");
+                parameter.Add(DbFactory.CreateDbParameter("@loginName", loginName.Trim()));
+            }
 
-                AggregateCacheDependency cd = TableCacheDependency.GetUserDependency();
-                DataCache.Insert(CacheKey.UserList, cd, users, false);
-            }
-            else
-            {
-                users = (List<T_User>)obj;
-            }
+            users = data.Repository().FindListPageBySql(strSql.ToString(), ref jqgrid);
 
             return users;
         }
