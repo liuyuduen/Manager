@@ -5,7 +5,8 @@
 <script type="text/javascript">
 
     $(function () {
-        pageInit();
+        //pageInit();
+        GetData();
     });
     function pageInit() {
         $("#gridTable").jqGrid({
@@ -45,7 +46,22 @@
             caption: "用户列表"//表格的标题名字
         }).navGrid("#gridPager", { edit: false, add: false, del: false });
     }
+    function GetData() {
 
+        $('#gridTable').bootstrapTable({
+            url: '@Url.Content("/User/GetUserList")',
+            columns: [{
+                field: 'userID',
+                title: 'Item ID'
+            }, {
+                field: 'LoginName',
+                title: 'Item Name'
+            }, {
+                field: 'NiceName',
+                title: 'Item Price'
+            }]
+        });
+    }
 </script>
 
 

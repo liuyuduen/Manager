@@ -108,23 +108,7 @@ namespace Base.Utility
 
             return dt;
         }
-
-
-        public DataTable getdt(IList<object> objList)
-        {
-
-            DataTable dt = new DataTable(); 
-            dt.Columns.Add("银行");
-            dt.Columns.Add("卡号");  
-            foreach (string a in objList)
-            {
-                DataRow dr = dt.NewRow();
-                dr["银行"] = a.Length;
-                dr["卡号"] = a.Length;
-                dt.Rows.Add(dr);
-            }
-            return dt;
-        }
+        
         /// <summary>
         /// 将 List 转换成 dataTable
         /// </summary>

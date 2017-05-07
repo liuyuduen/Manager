@@ -90,6 +90,7 @@
     <Compile Include="Common\CommonHelper.cs" />
     <Compile Include="Common\ConfigHelper.cs" />
     <Compile Include="Common\PathHelper.cs" />
+    <Compile Include="Convert\DataToEntityHelper.cs" />
     <Compile Include="Log\ILogHelp.cs" />
     <Compile Include="Log\LogHelp.cs" />
     <Compile Include="Security\ZipHelper.cs" />
